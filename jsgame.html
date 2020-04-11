@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript Game</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<style type="text/css">
+		.field{
+			height: 50px;
+			width: 50px;
+			border: solid;black;
+		}
+		.message{
+			height: 100px;
+			width: 100px;
+			transition: 1s;
+			background-color: grey
+		}
+		.fieldcont{
+			height: 50px;
+			width: 50px;
+			border: solid;black;
+			background-color: red
+		}
+	</style>
+</head>
+<body>
+<div style="display: flex">
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+</div>
+<div style="display: flex">
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+</div>
+<div style="display: flex">
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+</div>
+<div style="display: flex">
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+</div>
+<div style="display: flex">
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+</div>
+<div style="display: flex" class="first">
+	<div class="field"></div>
+	<div class="field"></div>
+	<div class="field"></div>
+	<div class="field"></div>
+	<div class="field"></div>
+	<div class="field"></div>
+	<div class="field"></div>
+	<div class="field"></div>
+	<div class="field"></div>
+	<div class="field"></div>
+	<div class="field"></div>
+	<div class="field"></div>
+	<div class="field"></div>
+	<div class="field"></div>
+	<div class="field"></div>
+	<div class="field"></div>
+	<div class="field"></div>
+	<div class="field"></div>
+	<div class="field"></div>
+	<div class="fieldcont"></div>
+	<div class="field"></div>
+	<div class="field"></div>
+	<div class="field"></div>
+	<div class="field"></div>
+	<div class="field"></div>
+	<div class="field"></div>
+	<div class="field"></div>
+	<div class="field"></div>
+	<div class="field"></div>
+	<div class="field"></div>
+	<div class="field"></div>
+</div>
+<div style="display: flex">
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+</div>
+<div style="display: flex">
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+</div>
+<div style="display: flex">
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+</div>
+<div style="display: flex">
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+</div>
+<div style="display: flex">
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+</div>
+<div style="display: flex">
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+	<div class="field bg-light"></div>
+</div>
+<div class="info bg-info row" style="height: 121px; width: 1551px; display: flex">
+	<div class="col-3 mx-auto bg-light name" style="height: 121px">
+		<h1 style="text-align: center;">Останови коронавирус!</h1>
+	</div>
+</div>
+
+<script type="text/javascript">
+	let people = 100
+
+	let cont = 0
+
+	let cure = 0
+
+	let fund = 0
+
+	let heal = 0
+
+	let virusheal = 100
+
+	let firstpat = 1
+
+	let dead = 0
+
+	le t firstcont = document.querySelector(".fieldcont")
+
+	if (cont == 100 || dead == 100) {
+		alert("Ты проиграл!")
+	}
+	if (virusheal = 0 || heal == 100) {
+		alert("Ты выиграл!")
+	}
+
+	for (let i=0;i<372;i=i+1) {
+
+	}
+
+</script>
+</body>
+</html>
+
+
